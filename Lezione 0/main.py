@@ -6,16 +6,16 @@ def main():
         print("Scegli un'opzione:")
         print("1. Verifica se un numero è positivo, negativo o zero")
         print("2. Conversione di tipi di dato")
-        print("3. Esci")
+        print("99. Esci")
         choice = input(">>> ")
         match choice:
             case '1':
-                import Algoritmi.PositivoNegativo as Numeri
+                import Modules.PositivoNegativo as Numeri
                 Numeri.main()
             case '2':
-                import Algoritmi.TypeCasting as TypeCast
+                import Modules.TypeCasting as TypeCast
                 TypeCast.main()
-            case '3':
+            case '99':
                 print("Uscita in corso...")
                 break
             case _:
