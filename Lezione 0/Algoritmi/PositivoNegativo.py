@@ -1,6 +1,6 @@
 import os
 
-def function():
+def main():
     while True:
         try:
             os.system('cls' if os.name == 'nt' else 'clear')
@@ -19,4 +19,4 @@ def function():
             break
 
 if __name__ == "__main__":
-    function()
+    main()
