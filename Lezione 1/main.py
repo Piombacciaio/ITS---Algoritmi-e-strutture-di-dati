@@ -1,15 +1,25 @@
 import os
 
+lista_opzioni = [
+    "Scegli un'opzione:\n",
+    "1. Esegui script sulle liste\n",
+    "2. Esegui script sui dizionari\n",
+    "3. Esegui script sull'unpacking\n",
+    "4. Esegui script sulle operazioni con range\n",
+    "5. Esegui script sulla cancellazione di elementi\n",
+    "6. Esegui script sull'operatore in\n",
+    "7. Esegui script sugli operatori booleani\n",
+    "8. Esegui script sui valori booleani\n",
+    "9. Esegui script sulle variabili e tipi\n"
+    "99. Esci\n"
+]
+
+
+
 def main():
     while True:
         os.system('cls' if os.name == 'nt' else 'clear')
-        print("Scegli un'opzione:")
-        print("1. Esegui script sulle liste")
-        print("2. Esegui script sui dizionari")
-        print("3. Esegui script sull'unpacking")
-        print("4. Esegui script sulle operazioni con range")
-        print("5. Esegui script sulla cancellazione di elementi")
-        print("99. Esci")
+        print(*lista_opzioni)
         choice = input(">>> ")
         match choice:
             case '1':
@@ -36,10 +46,18 @@ def main():
             case '8':
                 import Modules.boolean_values as boolean_values
                 boolean_values.main()
-            
+            case '9':
+                import Modules.name_variable as name_variable
+                name_variable.main()
+
             case '99':
                 print("Uscita in corso...")
                 break
             case _:
                 print("Opzione non valida. Riprova.")
         input("\nPremi Invio per continuare...")
+
+
+
+if __name__ == '__main__':
+    main()
