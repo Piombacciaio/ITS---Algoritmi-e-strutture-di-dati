@@ -2,21 +2,23 @@ import os, sys
 
 import Lezione0.main as L0 
 import Lezione1.main as L1
+import Lezione2.main as L2
 import Dispense.main as DM
 
 
 lista_opzioni = [
-    "Scegli un opzione\n\n"
-    " 1. Lezione 0\n",
-    "2. Lezione 1\n",
-    "88. Dispense\n"
-    " 99. Exit\n"
+    "Scegli un opzione:\n\n"
+    "0. Lezione 0\n",
+    "1. Lezione 1\n",
+    "2. Lezione 2\n",
+    "88. Dispense\n",
+    "99. Exit\n"
 ]
 
 lista_funz = {
-    1: [L0.lista_funz, L0.lista_opzioni],
-    2: [L1.lista_funz, L1.lista_opzioni],
-
+    0: [L0.lista_funz, L0.lista_opzioni],
+    1: [L1.lista_funz, L1.lista_opzioni],
+    2: [L2.lista_funz, L2.lista_opzioni]
 }
 
 def clean():
