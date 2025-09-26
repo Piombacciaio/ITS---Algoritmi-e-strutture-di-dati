@@ -3,6 +3,7 @@ import os, sys
 import Lezione0.main as L0 
 import Lezione1.main as L1
 import Lezione2.main as L2
+import Lezione3.main as L3
 import Dispense.main as DM
 
 
@@ -11,6 +12,7 @@ lista_opzioni = [
     "0. Lezione 0\n",
     "1. Lezione 1\n",
     "2. Lezione 2\n",
+    "3. Lezione 3\n",
     "88. Dispense\n",
     "99. Exit\n"
 ]
@@ -18,7 +20,8 @@ lista_opzioni = [
 lista_funz = {
     0: [L0.lista_funz, L0.lista_opzioni],
     1: [L1.lista_funz, L1.lista_opzioni],
-    2: [L2.lista_funz, L2.lista_opzioni]
+    2: [L2.lista_funz, L2.lista_opzioni],
+    3: [L3.lista_funz, L3.lista_opzioni]
 }
 
 def clean():
@@ -30,7 +33,7 @@ def main():
 
         clean()
 
-        print(*lista_opzioni)
+        print(*lista_opzioni, sep="")
 
         try:
             choice = int(input(">> "))
