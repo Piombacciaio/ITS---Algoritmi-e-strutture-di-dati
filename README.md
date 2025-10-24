@@ -41,4 +41,7 @@ Le lezioni da Lezione0 a Lezione 3 riguardano le basi del linguaggio Python
 
 [FlowChart - Algoritmi](https://robot.unipv.it/toolleeo/teaching/docs_fdi/fdi_flowchart.pdf)
 
+## Progetto
+Schema da seguire per analizzare i dati e creare modelli di Machoine Learning. [Schema Progetto](Projects/data_alzhaimer.ows)
+
 Grazie unipv <3
